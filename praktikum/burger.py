@@ -1,7 +1,8 @@
 from typing import List
-
+import pytest
 from praktikum.bun import Bun
 from praktikum.ingredient import Ingredient
+from unittest.mock import Mock
 
 
 class Burger:
@@ -46,3 +47,7 @@ class Burger:
         receipt.append(f'Price: {self.get_price()}')
 
         return '\n'.join(receipt)
+
+
+ 
+    
